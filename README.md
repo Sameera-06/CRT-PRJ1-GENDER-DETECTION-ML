@@ -49,8 +49,10 @@ The user enters a name through a web interface, and the trained model predicts t
 
 GENDER_DETECTIO...
 │
+|
 ├── output
-│   └── Screenshot 2026-06-07 235...
+│
+|   └── Screenshot 2026-06-07 235...
 │
 ├── static
 │   └── style.css
