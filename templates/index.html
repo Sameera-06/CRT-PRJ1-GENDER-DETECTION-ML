@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Detection</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Background Symbols -->
+    <div class="male-symbol">♂</div>
+    <div class="female-symbol">♀</div>
+
+    <div class="container">
+
+        <h1>Gender Detection</h1>
+
+        <p class="subtitle">
+            Predict Gender Using Machine Learning
+        </p>
+
+        <form action="/predict" method="POST">
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter a Name"
+                required>
+
+            <button type="submit">
+                Predict Gender
+            </button>
+
+        </form>
+
+        {% if prediction %}
+
+        <div class="result">
+
+            <h2>{{ name }}</h2>
+
+            <h3>
+                Predicted Gender:
+                <span>{{ prediction }}</span>
+            </h3>
+
+        </div>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>

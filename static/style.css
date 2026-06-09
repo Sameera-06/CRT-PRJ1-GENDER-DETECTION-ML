@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #4facfe,
+        #00f2fe,
+        #ff758c,
+        #ff7eb3
+    );
+
+    overflow: hidden;
+}
+
+/* Male Symbol */
+.male-symbol {
+    position: absolute;
+    font-size: 350px;
+    color: rgba(255,255,255,0.08);
+
+    top: 5%;
+    left: 5%;
+
+    z-index: 0;
+}
+
+/* Female Symbol */
+.female-symbol {
+    position: absolute;
+    font-size: 350px;
+    color: rgba(255,255,255,0.08);
+
+    bottom: 5%;
+    right: 5%;
+
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+
+    width: 500px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.18);
+
+    backdrop-filter: blur(15px);
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+h1 {
+    color: white;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+    font-weight: bold;
+}
+
+.subtitle {
+    color: white;
+
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+input {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    outline: none;
+
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #6a11cb;
+
+    background: linear-gradient(
+        to right,
+        #6a11cb,
+        #2575fc
+    );
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+.result {
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.2);
+}
+
+.result h2 {
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.result h3 {
+    color: white;
+
+    font-size: 24px;
+}
+
+.result span {
+    color: yellow;
+
+    font-size: 28px;
+
+    font-weight: bold;
+}
