@@ -47,10 +47,10 @@ The user enters a name through a web interface, and the trained model predicts t
 
 ## Project Structure
 
-GENDER_DETECTIO
+GENDER_DETECTIO...
 │
 ├── output
-│   └── Screenshot 2026-06-07 235
+│   └── Screenshot 2026-06-07 235...
 │
 ├── static
 │   └── style.css
@@ -64,7 +64,7 @@ GENDER_DETECTIO
 ├── gender_model.pkl
 ├── model.py
 ├── README.md
-├── Screenshot 2026-06-07 2350
+├── Screenshot 2026-06-07 2350...
 └── vectorizer.pkl
 
 ---
